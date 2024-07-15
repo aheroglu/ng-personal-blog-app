@@ -1,0 +1,190 @@
+<div class="row mb-4">
+  <div class="col-12">
+    <h2 class="text-center fw-bold">Socials</h2>
+  </div>
+  <div class="col-12">
+    <button
+      data-bs-target="#addModal"
+      data-bs-toggle="modal"
+      class="btn btn-primary float-end"
+    >
+      <i class="fa fa-plus"></i>
+    </button>
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table table-hover text-center align-middle">
+    <thead>
+      <tr>
+        <th>Icon</th>
+        <th>Url</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (social of socials | paginate: {itemsPerPage: 7, currentPage : p};
+      track social.id) {
+      <tr>
+        <td>{{ social.icon }}</td>
+        <td>{{ social.url }}</td>
+        <td>{{ social.createdAt | date : "medium" }}</td>
+        <td>{{ social.updatedAt | date : "medium" }}</td>
+        <td>
+          <div class="btn-group">
+            <button
+              (click)="get(social)"
+              data-bs-target="#updateModal"
+              data-bs-toggle="modal"
+              class="btn btn-success"
+            >
+              <i class="fa fa-edit"></i>
+            </button>
+            <button (click)="delete(social)" class="btn btn-danger">
+              <i class="fa fa-trash"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
+<div class="float-end mt-3">
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+
+<!-- Create Modal -->
+<div
+  class="modal fade"
+  id="addModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+  data-bs-backdrop="static"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          Create New Social
+        </h1>
+        <button
+          #createModalCloseBtn
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form #form="ngForm" (ngSubmit)="create(form)" autocomplete="off">
+        <div class="modal-body">
+          <div class="form-group mb-3">
+            <label class="form-label">Icon</label>
+            <input
+              #icon="ngModel"
+              [(ngModel)]="createModel.icon"
+              name="icon"
+              type="text"
+              class="form-control form-control"
+              placeholder="Icon..."
+              required
+              minlength="2"
+              maxlength="30"
+            />
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label">Url</label>
+            <input
+              #url="ngModel"
+              [(ngModel)]="createModel.url"
+              name="url"
+              type="text"
+              class="form-control form-control"
+              placeholder="Url..."
+              required
+            />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            [disabled]="!form.valid"
+            type="submit"
+            class="btn btn-primary"
+          >
+            Save changes
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Update Modal -->
+<div
+  class="modal fade"
+  id="updateModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+  data-bs-backdrop="static"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Update Social</h1>
+        <button
+          #updateModalCloseBtn
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form
+        #updateForm="ngForm"
+        (ngSubmit)="update(updateForm)"
+        autocomplete="off"
+      >
+        <div class="modal-body">
+          <div class="form-group mb-3">
+            <label class="form-label">Icon</label>
+            <input
+              #updateIcon="ngModel"
+              [(ngModel)]="updateModel.icon"
+              name="updateIcon"
+              type="text"
+              class="form-control form-control"
+              placeholder="Icon..."
+              required
+              minlength="2"
+              maxlength="30"
+            />
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label">Url</label>
+            <input
+              #updateUrl="ngModel"
+              [(ngModel)]="updateModel.url"
+              name="updateUrl"
+              type="text"
+              class="form-control form-control"
+              placeholder="Url..."
+              required
+            />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            [disabled]="!updateForm.valid"
+            type="submit"
+            class="btn btn-primary"
+          >
+            Save changes
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

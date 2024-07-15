@@ -1,0 +1,12 @@
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\bin\Debug\net8.0\PersonalBlogServer.Domain.deps.json
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\bin\Debug\net8.0\PersonalBlogServer.Domain.dll
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\bin\Debug\net8.0\PersonalBlogServer.Domain.pdb
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\obj\Debug\net8.0\PersonalBlogServer.Domain.csproj.AssemblyReference.cache
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\obj\Debug\net8.0\PersonalBlogServer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\obj\Debug\net8.0\PersonalBlogServer.Domain.AssemblyInfoInputs.cache
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\obj\Debug\net8.0\PersonalBlogServer.Domain.AssemblyInfo.cs
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\obj\Debug\net8.0\PersonalBlogServer.Domain.csproj.CoreCompileInputs.cache
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\obj\Debug\net8.0\PersonalBlogServer.Domain.dll
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\obj\Debug\net8.0\refint\PersonalBlogServer.Domain.dll
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\obj\Debug\net8.0\PersonalBlogServer.Domain.pdb
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Domain\obj\Debug\net8.0\ref\PersonalBlogServer.Domain.dll

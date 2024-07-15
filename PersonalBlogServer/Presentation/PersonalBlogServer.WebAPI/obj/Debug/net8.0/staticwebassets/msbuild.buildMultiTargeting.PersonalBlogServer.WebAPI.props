@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PersonalBlogServer.WebAPI.props" />
+</Project>

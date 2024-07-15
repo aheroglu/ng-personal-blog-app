@@ -1,0 +1,15 @@
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\bin\Debug\net8.0\PersonalBlogServer.Application.deps.json
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\bin\Debug\net8.0\PersonalBlogServer.Application.dll
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\bin\Debug\net8.0\PersonalBlogServer.Application.pdb
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\bin\Debug\net8.0\PersonalBlogServer.Domain.dll
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\bin\Debug\net8.0\PersonalBlogServer.Domain.pdb
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\obj\Debug\net8.0\PersonalBlogServer.Application.csproj.AssemblyReference.cache
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\obj\Debug\net8.0\PersonalBlogServer.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\obj\Debug\net8.0\PersonalBlogServer.Application.AssemblyInfoInputs.cache
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\obj\Debug\net8.0\PersonalBlogServer.Application.AssemblyInfo.cs
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\obj\Debug\net8.0\PersonalBlogServer.Application.csproj.CoreCompileInputs.cache
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\obj\Debug\net8.0\Personal.34E4B229.Up2Date
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\obj\Debug\net8.0\PersonalBlogServer.Application.dll
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\obj\Debug\net8.0\refint\PersonalBlogServer.Application.dll
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\obj\Debug\net8.0\PersonalBlogServer.Application.pdb
+C:\Users\aheroglu\Desktop\PersonalBlog\PersonalBlogServer\Core\PersonalBlogServer.Application\obj\Debug\net8.0\ref\PersonalBlogServer.Application.dll

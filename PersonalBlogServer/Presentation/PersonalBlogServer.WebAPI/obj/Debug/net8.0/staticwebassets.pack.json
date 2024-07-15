@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\aheroglu\\Desktop\\PersonalBlog\\PersonalBlogServer\\Presentation\\PersonalBlogServer.WebAPI\\wwwroot\\img\\posts\\61e768bb-7f2e-4772-afd4-c7eba551e444.png",
+      "PackagePath": "staticwebassets\\img\\posts\\61e768bb-7f2e-4772-afd4-c7eba551e444.png"
+    },
+    {
+      "Id": "C:\\Users\\aheroglu\\Desktop\\PersonalBlog\\PersonalBlogServer\\Presentation\\PersonalBlogServer.WebAPI\\wwwroot\\img\\posts\\6bfd675d-f676-48ea-aa95-d1d27edc779d.jpg",
+      "PackagePath": "staticwebassets\\img\\posts\\6bfd675d-f676-48ea-aa95-d1d27edc779d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aheroglu\\Desktop\\PersonalBlog\\PersonalBlogServer\\Presentation\\PersonalBlogServer.WebAPI\\wwwroot\\img\\posts\\839a00b5-194a-4419-8aa4-a315d5239a92.png",
+      "PackagePath": "staticwebassets\\img\\posts\\839a00b5-194a-4419-8aa4-a315d5239a92.png"
+    },
+    {
+      "Id": "C:\\Users\\aheroglu\\Desktop\\PersonalBlog\\PersonalBlogServer\\Presentation\\PersonalBlogServer.WebAPI\\wwwroot\\img\\posts\\bbf2efbe-b3ed-49a8-ab0e-2688775cf05a.jpg",
+      "PackagePath": "staticwebassets\\img\\posts\\bbf2efbe-b3ed-49a8-ab0e-2688775cf05a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aheroglu\\Desktop\\PersonalBlog\\PersonalBlogServer\\Presentation\\PersonalBlogServer.WebAPI\\wwwroot\\img\\posts\\c8e57679-5307-4147-bea7-a8b23cd9ebf6.jpg",
+      "PackagePath": "staticwebassets\\img\\posts\\c8e57679-5307-4147-bea7-a8b23cd9ebf6.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PersonalBlogServer.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PersonalBlogServer.WebAPI.props",
+      "PackagePath": "build\\PersonalBlogServer.WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PersonalBlogServer.WebAPI.props",
+      "PackagePath": "buildMultiTargeting\\PersonalBlogServer.WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PersonalBlogServer.WebAPI.props",
+      "PackagePath": "buildTransitive\\PersonalBlogServer.WebAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

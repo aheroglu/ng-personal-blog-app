@@ -1,0 +1,48 @@
+<div
+  class="container min-vh-100 d-flex justify-content-center align-items-center"
+>
+  <form #form="ngForm" (ngSubmit)="login(form)" autocomplete="off">
+    <div class="mb-3">
+      <label class="form-label">Username</label>
+      <input
+        #userName="ngModel"
+        [(ngModel)]="model.userName"
+        name="userName"
+        type="text"
+        class="form-control"
+        required
+      />
+      @if(userName.invalid && (userName.dirty || userName.touched)){
+      @if(userName.errors?.['required']){
+      <div class="text-danger">A username is required!</div>
+      } }
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input
+        #password="ngModel"
+        [(ngModel)]="model.password"
+        name="password"
+        type="password"
+        class="form-control"
+        required
+      />
+      @if(password.invalid && (password.dirty || password.touched)){
+      @if(password.errors?.['required']){
+      <div class="text-danger">A password is required!</div>
+      } }
+    </div>
+    <div class="mb-3">
+      <button
+        [disabled]="!form.valid"
+        type="submit"
+        class="btn btn-primary w-100 mb-3"
+      >
+        Login
+      </button>
+      <button routerLink="/" class="btn btn-secondary w-100">
+        Return Home
+      </button>
+    </div>
+  </form>
+</div>

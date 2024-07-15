@@ -1,0 +1,111 @@
+<div class="row mb-4">
+  <div class="col-12">
+    <h2 class="text-center fw-bold">Messages</h2>
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table table-hover text-center align-middle">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Created At</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (message of messages | paginate: {itemsPerPage: 7, currentPage: p};
+      track message.id) {
+      <tr>
+        <td>{{ message.name }}</td>
+        <td>{{ message.email }}</td>
+        <td>{{ message.createdAt | date : "medium" }}</td>
+        <td>{{ message.updatedAt | date : "medium" }}</td>
+        <td>
+          <div class="btn-group">
+            <button
+              (click)="get(message)"
+              data-bs-target="#getModal"
+              data-bs-toggle="modal"
+              class="btn btn-warning"
+            >
+              <i class="fa fa-book"></i>
+            </button>
+            <button (click)="delete(message)" class="btn btn-danger">
+              <i class="fa fa-trash"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
+<div class="float-end mt-3">
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+
+<!-- Create Modal -->
+<div
+  class="modal fade"
+  id="getModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+  data-bs-backdrop="static"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          Create New Social
+        </h1>
+        <button
+          #getModalCloseBtn
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group mb-3">
+          <label class="form-label">Name</label>
+          <input
+            [(ngModel)]="getMessage.name"
+            name="name"
+            type="text"
+            class="form-control bg-white"
+            readonly
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label class="form-label">Url</label>
+          <input
+            [(ngModel)]="getMessage.email"
+            name="email"
+            type="text"
+            class="form-control bg-white"
+            readonly
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label class="form-label">Content</label>
+          <textarea
+            [(ngModel)]="getMessage.content"
+            name="content"
+            type="text"
+            class="form-control bg-white"
+            readonly
+            rows="7"
+          ></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button (click)="delete(getMessage)" class="btn btn-danger">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
